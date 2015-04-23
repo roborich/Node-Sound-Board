@@ -16,15 +16,20 @@ app.get('/', function(req, res){
 		var sound_files = [];
 		var soundCheck = function(files){
 				console.log(files);
-				// files.forEach(function(file){
-				// 	if(file.indexOf(".mp3") > -1 || file.indexOf(".wav") > -1 ) {
-				// 		sound_files.push(file);
-				// 	}
-				// });
+				files.forEach(function(file){
+					if(file.indexOf(".mp3") > -1 || file.indexOf(".wav") > -1 ) {
+						sound_files.push(file);
+					}
+				});
 			};
-		soundCheck(files);
-		page_options.files = sound_files;
-		res.render('boilerplate', page_options);
+		if(files)
+			soundCheck(files);
+			page_options.files = sound_files;
+			res.render('boilerplate', page_options);
+		} else {
+			console.log("No MP3s found.");
+			res.send("No MP3s found.");
+		}
 	});
   //res.sendFile(__dirname + '/index.html');
   //console.log('someone visited home');
