@@ -13,6 +13,7 @@ app.engine('jade', require('jade').__express);
 app.get('/', function(req, res){
 	fs.readdir('audio/', function(err, files){
 		var page_options = {};
+		console.log(files);
 		page_options.files = files;
 		res.render('boilerplate', page_options);
 	});

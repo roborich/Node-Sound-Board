@@ -1,2 +1,2 @@
-# Pi-Sound-Board
-A node web server that plays sounds over the pi's speakers.
+# Node-Sound-Board
+A node web server that plays sounds over the computer's speakers.
