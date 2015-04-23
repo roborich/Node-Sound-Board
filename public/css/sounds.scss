@@ -1,0 +1,16 @@
+body {
+	background: #ecf0f1;
+}
+ul {
+	list-style: none;
+	li {
+		padding: 10px;
+		margin: 5px;
+		background: #2c3e50;
+		color: #ecf0f1;
+		cursor: pointer;
+		&:hover {
+			background: #c0392b;
+		}
+	}
+}

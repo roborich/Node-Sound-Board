@@ -1,0 +1,15 @@
+{
+  "name": "onjax-sound",
+  "version": "0.0.0",
+  "description": "App that plays audio at the office",
+  "dependencies": {
+    "express": "^4.10.2",
+    "fs": "latest",
+    "jade": "latest",
+    "lame": "latest",
+    "musicmetadata": "^0.6.6",
+    "socket.io": "latest",
+    "speaker": "latest"
+  },
+  "author": "developer"
+}
