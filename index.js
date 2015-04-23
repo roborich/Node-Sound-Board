@@ -15,11 +15,12 @@ app.get('/', function(req, res){
 		var page_options = {};
 		var sound_files = [];
 		var soundCheck = function(files){
-				files.forEach(function(file){
-					if(file.indexOf(".mp3") > -1 || file.indexOf(".wav") > -1 ) {
-						sound_files.push(file);
-					}
-				});
+				console.log(files);
+				// files.forEach(function(file){
+				// 	if(file.indexOf(".mp3") > -1 || file.indexOf(".wav") > -1 ) {
+				// 		sound_files.push(file);
+				// 	}
+				// });
 			};
 		soundCheck(files);
 		page_options.files = sound_files;
