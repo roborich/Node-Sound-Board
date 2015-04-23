@@ -13,8 +13,16 @@ app.engine('jade', require('jade').__express);
 app.get('/', function(req, res){
 	fs.readdir('audio/', function(err, files){
 		var page_options = {};
-		console.log(files);
-		page_options.files = files;
+		var sound_files = [];
+		var soundCheck = function(files){
+				files.forEach(function(file){
+					if(file.indexOf(".mp3") > -1 || file.indexOf(".wav") > -1 ) {
+						sound_files.push(file);
+					}
+				});
+			};
+		soundCheck(files);
+		page_options.files = sound_files;
 		res.render('boilerplate', page_options);
 	});
   //res.sendFile(__dirname + '/index.html');
