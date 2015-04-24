@@ -22,7 +22,7 @@ app.get('/', function(req, res){
 					}
 				});
 			};
-		if(files)
+		if(files) {
 			soundCheck(files);
 			page_options.files = sound_files;
 			res.render('boilerplate', page_options);
