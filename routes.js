@@ -27,6 +27,7 @@ var play = function(sounds){
 
 							sounds.shift();
 							console.log("sending " + sounds + " back to play()");
+							play(sounds);
 						})
 					);
 				});
@@ -42,7 +43,10 @@ exports.post_play = function(req, res){
 	//res.send('playing sounds');
 
 	var clips = req.body.clips;
-	play(clips);
+	//res.end();
+
+		play(clips);
+
 
 	//res.send('playing sounds');
 };
