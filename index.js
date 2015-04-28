@@ -2,7 +2,7 @@ var express = require('express'),
 	app = express(),
 	http = require('http').Server(app),
 	jade = require('jade'),
-	route = require('./routes.js'),
+	route = require('./routes'),
 	bodyParser = require('body-parser');
 
 // Jade engine stuff
