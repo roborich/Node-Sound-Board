@@ -12,9 +12,14 @@ html
     script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js')
 
   body(class='homepage')
-    .container-fluid
-      each val in files
-        div(class="col-xs-4 sound" data-file=val)=val
 
+    .container
+      h1 Onjax Soundboard
+      form#say
+        .form-group
+          input.form-control#say_input(type="text" placeholder="Text to Speech")
+    .container
+      each val in files
+        button.sound.btn(data-file=val)=val
   script(src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js")
   script(src="/js/sounds.js")

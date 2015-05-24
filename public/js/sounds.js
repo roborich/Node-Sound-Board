@@ -5,4 +5,19 @@ $(function(){
 
 		});
 	});
+
+	$('#say').submit(function(event) {
+		var say_this = $("#say_input").val();
+		console.log(say_this);
+		$.ajax({
+			type: "POST",
+			url: "http://sound.roborich.com/say",
+			data: JSON.stringify({"say" : say_this}),
+			contentType: "application/json"
+		});
+
+		event.preventDefault();
+		$("#say_input").val("");
+	});
+
 });

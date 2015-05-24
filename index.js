@@ -18,6 +18,7 @@ app
 	.get('/', route.home)
 	.get('/play/:sound', route.get_play)
 	.post('/play', route.post_play)
+	.post('/say', route.post_say)
 
 // Middleware that sends static requests.
 	.use(express.static(__dirname + '/public'));

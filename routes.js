@@ -1,5 +1,6 @@
 var mp3Player = require('./mp3Player');
-
+var say = require('say');
+var util = require('util');
 exports.home = function(req, res){
 	var page_options = {
 		files : mp3Player.mp3s
@@ -18,5 +19,9 @@ exports.get_play = function(req, res){
 	mp3Player.play(req.params.sound);
 };
 
-
+exports.post_say = function(req, res){
+	res.send("saying " + req.body);
+	console.log(req);
+	say.speak("", req.body.say);
+};
 

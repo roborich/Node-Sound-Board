@@ -1,2 +1,2 @@
-body{background:#ecf0f1}.sound{padding:10px;background:#2c3e50;color:#ecf0f1;cursor:pointer;height:100px;border:solid 4px #ecf0f1;font-size:1.4em}.sound:hover{background:#c0392b}
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);@import url(http://fonts.googleapis.com/css?family=Audiowide);body{background:#052636;background-image:url("/images/dark.jpg");background-size:250px 250px;font-family:"Oswald", sans-serif}h1{color:#F7F7F7;font-family:"Audiowide", sans-serif}.sound{margin:6px;background:#FF5336;border:#FF2636;color:#F7F7F7;font-size:20px;text-shadow:4px 4px #FF2636}.sound:hover{color:#F7F7F7;background:#FF2636}#say{margin:20px 0}
 /*# sourceMappingURL=sounds.css.map */

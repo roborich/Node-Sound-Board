@@ -1,15 +1,33 @@
+//colors
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Audiowide);
+$gray: #D4D4D4;
+$white: #F7F7F7;
+$orange: #FF5336;
+$red: #FF2636;
+$black: #052636;
 body {
-	background: #ecf0f1;
+	background: $black;
+	background-image:url('/images/dark.jpg');
+	background-size: 250px 250px;
+	font-family: "Oswald", sans-serif;
+}
+h1 {
+	color: $white;
+	font-family: "Audiowide", sans-serif;
 }
 .sound {
-	padding: 10px;
-	background: #2c3e50;
-	color: #ecf0f1;
-	cursor: pointer;
-	height: 100px;
-	border: solid 4px #ecf0f1;
-	font-size: 1.4em;
+	margin: 6px;
+	background: $orange;
+	border: $red;
+	color: $white;
+	font-size: 20px;
+	text-shadow: 4px 4px $red;
 	&:hover {
-		background: #c0392b;
+		color: $white;
+		background: $red;
 	}
+}
+#say {
+  margin: 20px 0;
 }
