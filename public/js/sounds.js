@@ -11,7 +11,7 @@ $(function(){
 		console.log(say_this);
 		$.ajax({
 			type: "POST",
-			url: "http://sound.roborich.com/say",
+			url: "http://localhost:8085/say",
 			data: JSON.stringify({"say" : say_this}),
 			contentType: "application/json"
 		});

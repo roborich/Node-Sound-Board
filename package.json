@@ -1,13 +1,33 @@
 {
-
+  "name": "soundboard-app",
+  "version": "1.0.0",
+  "description": "Soundboard",
+  "main": "main.js",
   "dependencies": {
-    "express": "*",
-    "fs": "*",
-    "jade": "*",
-    "lame": "*",
-    "musicmetadata": "*",
-    "say": "^0.6.0",
-    "socket.io": "*",
-    "speaker": "*"
-  }
+    "@types/node": "^10.9.2",
+    "body-parser": "^1.15.2",
+    "express": "4.16.3",
+    "lame": "^1.2.4",
+    "musicmetadata": "2.0.5",
+    "pug": "^2.0.3",
+    "say": "^0.15.0",
+    "socket.io": "2.1.1",
+    "speaker": "^0.4.1",
+    "typescript": "^3.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "npx ts-node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roborich/Pi-Sound-Board.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roborich/Pi-Sound-Board/issues"
+  },
+  "homepage": "https://github.com/roborich/Pi-Sound-Board#readme"
 }
